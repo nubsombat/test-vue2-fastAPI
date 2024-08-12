@@ -36,7 +36,7 @@ def create_part(part: schemas.PartCreate, db: Session = Depends(get_db)):
 def read_parts(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     return crud.get_parts(db, skip=skip, limit=limit)
 
-@app.post("/changeover-times/", response_model=schemas.ChangeoverTime)
+@app.post("/changeover-times/", response_model=schemas.ChangeoverTimeCreate)
 def create_changeover_time(changeover_time: schemas.ChangeoverTimeCreate, db: Session = Depends(get_db)):
     return crud.create_changeover_time(db=db, changeover_time=changeover_time)
 

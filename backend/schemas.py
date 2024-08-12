@@ -22,6 +22,8 @@ class ChangeoverTimeCreate(ChangeoverTimeBase):
 
 class ChangeoverTime(ChangeoverTimeBase):
     id: int
+    from_part_name: str
+    to_part_name: str
 
     class Config:
         orm_mode = True
