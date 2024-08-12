@@ -4,6 +4,7 @@
       <v-toolbar-title>Parts Changeover System</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn text to="/">Home</v-btn>
+      <v-btn text to="/part-changeover">Part Changeover</v-btn>
       <v-btn text to="/about">About</v-btn>
     </v-app-bar>
 
